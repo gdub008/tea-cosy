@@ -8,13 +8,13 @@ body {
 
 header {
   display: flex;
+  width: 100%;
   position: fixed;
   align-items: center;
   justify-content: space-between;
   height: 69px;
-  width: 100%;
   background-color: black;
-  border: 1px solid seashell;
+  border-bottom: 1px solid seashell;
   z-index: 5;
 }
 
@@ -96,7 +96,6 @@ header nav span {
 
 .tea-month-image-container {
   display: flex;
-  border: 2px solid red;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -141,4 +140,22 @@ header nav span {
 .location-box p {
   line-height: 3em;
   opacity: 1;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.contact {
+  height: 200px;
+  text-align: center;
+  border: 2px solid red;
+}
+
+.copyright {
+  text-align: left;
+  border: 2px solid red;
+  margin-left: 20px;
 }
