@@ -1,0 +1,3 @@
+# Submission of Tea Cosy project from Week 4 (days 6-7) for review
+# All code written by Glenn Wilson.
+# .....not sure what else we're required to put in the readme?.....
