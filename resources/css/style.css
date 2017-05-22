@@ -4,8 +4,10 @@ body {
   font-size: 22px;
   color: seashell;
   opacity: 0.9;
+  margin: 0;
 }
 
+/* Header and Nav content */
 header {
   display: flex;
   width: 100%;
@@ -16,10 +18,6 @@ header {
   background-color: black;
   border-bottom: 1px solid seashell;
   z-index: 5;
-}
-
-a {
-  color: seashell;
 }
 
 .tea-cosy-title {
@@ -40,8 +38,14 @@ header nav {
 
 header nav span {
   margin: 0 10px;
+  color: seashell;
 }
 
+header nav a {
+  color: seashell;
+}
+
+/* Main flex container div of Content */
 .content {
   display: flex;
   padding-top: 70px;
@@ -49,29 +53,11 @@ header nav span {
   align-items: center;
 }
 
+/* Section 1 content - "Our Mission" */
 .our-mission {
   display: flex;
   width: 100%;
   justify-content: space-around;
-}
-
-.tea-of-month {
-  width: 1200px;
-}
-
-.tea-of-month span {
-  line-height: 1.0em;
-  text-align: center;
-}
-
-.locations {
-  width: 1200px;
-  height: 500px;
-  padding: 40px 0px;
-  background-image: url("../img-locations-background.jpg");
-  text-align: center;
-  align-items: center;
-  border: 3px solid green;
 }
 
 .mission-image {
@@ -94,6 +80,17 @@ header nav span {
   background-color: black;
 }
 
+/* Section 2 of page - Tea of the Month */
+.tea-of-month {
+  width: 1000px;
+  height: 800px;
+  text-align: center;
+}
+
+.tea-of-month h2 {
+  padding-top: 40px;
+}
+
 .tea-month-image-container {
   display: flex;
   align-items: center;
@@ -101,18 +98,24 @@ header nav span {
   flex-wrap: wrap;
 }
 
-.tea-month-image {
-  text-align: center;
-  padding: 10px 25px;
+.tea-month-image h4 {
+  margin: 0 0 20px 0;
 }
 
 .tea-month-image img {
   max-width: 300px;
   max-height: 200px;
+  padding: 10px  15px;
 }
 
-.tea-month-image span {
-  line-height: 0em;
+/* Section 3 content - "Locations" */
+.locations {
+  width: 1200px;
+  height: 500px;
+  padding: 40px 0px;
+  background-image: url("../img-locations-background.jpg");
+  text-align: center;
+  align-items: center;
 }
 
 .location-listings {
@@ -126,7 +129,7 @@ header nav span {
   width: 300px;
   margin: 0px 20px;
   color: seashell;
-  opacity: 0.9;
+  opacity: 1.0;
 }
 
 .locations h2 {
@@ -142,6 +145,7 @@ header nav span {
   opacity: 1;
 }
 
+/* Footer content */
 footer {
   display: flex;
   width: 100%;
@@ -151,11 +155,13 @@ footer {
 .contact {
   height: 200px;
   text-align: center;
-  border: 2px solid red;
+}
+
+.contact h2 {
+  margin-top: 10px;
 }
 
 .copyright {
   text-align: left;
-  border: 2px solid red;
   margin-left: 20px;
 }
